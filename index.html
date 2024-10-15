@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Guessing</title>
+    <style>
+        body {
+            background-color: rgba(231, 218, 171, 0.685);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            justify-content: center;
+            background-color: rgb(247, 248, 249);
+            width: 40%;
+            margin: auto;
+            padding: 40px;
+
+        }
+        #score {
+            font-weight: bold;
+            font-size: 18px;
+            color: rgb(6, 189, 33);
+        }
+
+        button {
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            background-color: rgb(7, 30, 240);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #guess-input {
+            border: 2px solid black;
+            width: 80%;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        #result {
+            color: red;
+        }
+
+        .end {
+            color: RED;
+        }
+
+        @media screen and (max-width:1000px) {
+            h1 {
+                text-align: center;
+            }
+            .end{
+                text-align: center;
+            }
+           
+        }
+
+        #description {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Emoji Guessing Game</h1>
+        <div id="description"></div>
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <div id="result"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer"></div>
+        <button class="button" id="restart-button">Restart</button>
+    </div>
+
+<script src="script.js"></script>
+   
+</body>
+
+</html>
